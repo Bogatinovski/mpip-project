@@ -1,0 +1,3 @@
+<resources>
+    <string name="countries_api">https://restcountries.eu/rest/v2/</string>
+</resources>

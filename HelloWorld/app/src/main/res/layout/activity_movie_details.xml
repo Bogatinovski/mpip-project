@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mk.ukim.finki.mpip.helloworld.MovieDetailsActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textActors"
+        android:layout_alignStart="@+id/textActors" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_alignBaseline="@+id/textRating"
+        android:layout_alignBottom="@+id/textRating"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImdbID"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="143dp"
+        android:layout_alignBaseline="@+id/textImdbid"
+        android:layout_alignBottom="@+id/textImdbid"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rated"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="171dp"
+        android:layout_alignBaseline="@+id/textRated"
+        android:layout_alignBottom="@+id/textRated"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Released"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:layout_alignBaseline="@+id/textReleased"
+        android:layout_alignBottom="@+id/textReleased"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runtime"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:layout_alignBaseline="@+id/textRuntime"
+        android:layout_alignBottom="@+id/textRuntime"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Director"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_alignBaseline="@+id/textDirector"
+        android:layout_alignBottom="@+id/textDirector"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Writer"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="363dp"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignBottom="@+id/textWriter" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actors"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="395dp"
+        android:layout_above="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plot"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="422dp"
+        android:layout_alignBaseline="@+id/textPlot"
+        android:layout_alignBottom="@+id/textPlot"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="448dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="476dp"
+        android:layout_alignBaseline="@+id/textCountry"
+        android:layout_alignBottom="@+id/textCountry"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awards"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:layout_alignBaseline="@+id/textAwards"
+        android:layout_alignBottom="@+id/textAwards"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="imdbVotes"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_alignBaseline="@+id/textVotes"
+        android:layout_alignBottom="@+id/textVotes"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="imdbRating"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DVD"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="6dp"
+        android:layout_alignBaseline="@+id/textGenre"
+        android:layout_alignBottom="@+id/textGenre"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textDvd"
+        android:layout_alignLeft="@+id/textDvd"
+        android:layout_alignStart="@+id/textDvd" />
+
+    <TextView
+        android:id="@+id/textDvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="6dp"
+        android:layout_below="@+id/textYear"
+        android:layout_alignLeft="@+id/textYear"
+        android:layout_alignStart="@+id/textYear"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignLeft="@+id/textPlot"
+        android:layout_alignStart="@+id/textPlot" />
+
+    <TextView
+        android:id="@+id/textVotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_below="@+id/textImdbid"
+        android:layout_alignLeft="@+id/textImdbid"
+        android:layout_alignStart="@+id/textImdbid"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/textImdbid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="143dp"
+        android:layout_below="@+id/textRated"
+        android:layout_alignLeft="@+id/textRated"
+        android:layout_alignStart="@+id/textRated"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/textRated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp"
+        android:layout_below="@+id/textAwards"
+        android:layout_alignLeft="@+id/textAwards"
+        android:layout_alignStart="@+id/textAwards"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textAwards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textReleased"
+        android:layout_alignLeft="@+id/textReleased"
+        android:layout_alignStart="@+id/textReleased" />
+
+    <TextView
+        android:id="@+id/textReleased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:layout_below="@+id/textRuntime"
+        android:layout_alignLeft="@+id/textRuntime"
+        android:layout_alignStart="@+id/textRuntime"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textRuntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:layout_below="@+id/textGenre"
+        android:layout_alignLeft="@+id/textGenre"
+        android:layout_alignStart="@+id/textGenre"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_below="@+id/textDirector"
+        android:layout_alignLeft="@+id/textDirector"
+        android:layout_alignStart="@+id/textDirector"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_below="@+id/textWriter"
+        android:layout_alignLeft="@+id/textWriter"
+        android:layout_alignStart="@+id/textWriter"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/textWriter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="363dp"
+        android:layout_below="@+id/textLanguage"
+        android:layout_alignLeft="@+id/textCountry"
+        android:layout_alignStart="@+id/textCountry" />
+
+    <TextView
+        android:id="@+id/textActors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="395dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_alignLeft="@+id/textYear"
+        android:layout_alignStart="@+id/textYear" />
+
+    <TextView
+        android:id="@+id/textPlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="422dp"
+        android:layout_above="@+id/textView14"
+        android:layout_alignLeft="@+id/textCountry"
+        android:layout_alignStart="@+id/textCountry"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/textLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="448dp"
+        android:layout_below="@+id/textCountry"
+        android:layout_alignLeft="@+id/textCountry"
+        android:layout_alignStart="@+id/textCountry" />
+
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="478dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_below="@+id/textRating"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+
+
+</RelativeLayout>
