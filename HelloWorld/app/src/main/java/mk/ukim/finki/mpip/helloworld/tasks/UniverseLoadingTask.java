@@ -29,7 +29,7 @@ public class UniverseLoadingTask extends AsyncTask<Void, Void, Universe> {
     public UniverseLoadingTask(IUniverseCallbacks callbacks){
         this.callbacks = callbacks;
         this.context = (Context)callbacks;
-
+        Log.i("UNIVERSE", "UniverseLoadingTask");
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://ec2-18-185-114-159.eu-central-1.compute.amazonaws.com:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -40,10 +40,17 @@ public class UniverseLoadingTask extends AsyncTask<Void, Void, Universe> {
 
     @Override
     protected Universe doInBackground(Void... voids) {
+        Log.i("UNIVERSE", "doInBackground");
         Universe result = null;
         result = loadDataFromApi();
 
         return  result;
+    }
+
+    @Override
+    protected void onPreExecute() {
+        // Common scenario: Start progress dialog
+        super.onPreExecute();
     }
 
     @Override

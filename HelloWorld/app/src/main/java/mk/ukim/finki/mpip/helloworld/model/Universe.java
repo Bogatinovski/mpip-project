@@ -7,7 +7,7 @@ import java.util.List;
  */
 
 public class Universe {
-    public String Abstrat;
+    public String Abstract;
     public String Depiction;
     public List<CelestialBody> Categories;
 }
